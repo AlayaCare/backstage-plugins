@@ -69,3 +69,12 @@ export const EntityScoreCardContent = scoreCardPlugin.provide(
     },
   }),
 );
+
+export const EntityScoreCardOverview = scoreCardPlugin.provide(
+  createComponentExtension({
+    name: 'score-board-card-overview',
+    component: {
+      lazy: () => import('./components/ScoreCardOverview').then(m => m.ScoreCardOverview),
+    },
+  }),
+);

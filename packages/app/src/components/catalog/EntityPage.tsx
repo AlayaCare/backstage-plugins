@@ -36,7 +36,7 @@ import {
   EntityOwnershipCard,
 } from '@backstage/plugin-org';
 
-import { EntityScoreCardContent } from '@oriflame/backstage-plugin-score-card';
+import { EntityScoreCardContent, EntityScoreCardOverview } from '@oriflame/backstage-plugin-score-card';
 
 const overviewContent = (
   <Grid container spacing={3} alignItems="stretch">
@@ -93,6 +93,9 @@ const apiPage = (
       <Grid container spacing={3}>
         <Grid item md={6}>
           <EntityAboutCard />
+        </Grid>
+        <Grid item md={6}>
+          <EntityScoreCardOverview />
         </Grid>
       </Grid>
     </EntityLayout.Route>

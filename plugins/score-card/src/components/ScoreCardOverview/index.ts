@@ -13,15 +13,5 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-export {
-  scoreCardPlugin,
-  ScoreBoardPage,
-  ScoreCardTable,
-  EntityScoreCardContent,
-  EntityScoreCardOverview,
-} from './plugin';
 
-/**
- * The TypeScript API for configuring System Scoring.
- */
-export * from './api';
+export { ScoreCardOverview } from './ScoreCardOverview';
